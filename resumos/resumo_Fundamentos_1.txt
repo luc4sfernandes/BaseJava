@@ -1,0 +1,86 @@
+Criador --> Claude
+
+📌 RESUMO TÉCNICO: Fundamentos de Java — I/O, Tipos, Strings e Wrappers
+--------------------------------------------------
+⚙️ NOVAS FUNÇÕES E COMANDOS
+
+* System.out.print(): Imprime sem quebra de linha ao final.
+  - Sintaxe: System.out.print("texto");
+
+* System.out.println(): Imprime com \n automático ao final.
+  - Sintaxe: System.out.println("texto");
+
+* System.out.printf(): Imprime com formatação via especificadores (%d, %s, %.nf, %n).
+  - Sintaxe: System.out.printf("Salário: %.2f %n", 1234.56);
+
+* String.format(): Igual ao printf, mas retorna a String formatada em vez de imprimir.
+  - Sintaxe: String x = String.format("Nome: %s", nome);
+
+* Scanner (java.util.Scanner): Objeto que lê o fluxo System.in para capturar entrada do usuário.
+  - Sintaxe: Scanner entrada = new Scanner(System.in);
+
+* entrada.nextLine(): Lê uma linha inteira como String até o \n.
+  - Sintaxe: String nome = entrada.nextLine();
+
+* entrada.nextInt() / entrada.next(): Lê um int ou um token (palavra) do buffer, respectivamente.
+  - Sintaxe: int idade = entrada.nextInt();
+
+* entrada.close(): Libera o recurso do Scanner, fechando o fluxo de entrada.
+  - Sintaxe: entrada.close();
+
+* s.replace(old, new): Retorna nova String com todas as ocorrências de old substituídas por new.
+  - Sintaxe: s = s.replace("X", "senhora");
+
+* s.toUpperCase() / s.toLowerCase(): Retorna nova String com todos os caracteres em maiúsculo/minúsculo.
+  - Sintaxe: s = s.toUpperCase();
+
+* s.concat(str): Retorna nova String com str anexada ao final.
+  - Sintaxe: s = s.concat("!!!");
+
+* s.charAt(index): Retorna o char no índice especificado (0).
+  - Sintaxe: char c = s.charAt(0);
+
+* s.startsWith(str) / s.endsWith(str): Retorna boolean verificando prefixo/sufixo da String.
+  - Sintaxe: s.toLowerCase().startsWith("boa");
+
+* s.length(): Retorna int com a quantidade total de caracteres da String.
+  - Sintaxe: int n = s.length();
+
+* s.equals(str): Comparação case-sensitive de conteúdo entre duas Strings (não compara referência).
+  - Sintaxe: s.equals("boa tarde");
+
+* s.equalsIgnoreCase(str): Igual ao equals, mas ignora diferença entre maiúsculas e minúsculas.
+  - Sintaxe: s.equalsIgnoreCase("BOA TARDE");
+
+* Integer.parseInt(str): Converte uma String numérica para int primitivo/Integer.
+  - Sintaxe: Integer i = Integer.parseInt(entrada.next());
+
+* Boolean.parseBoolean(str): Converte String "true"/"false" para boolean.
+  - Sintaxe: Boolean bo = Boolean.parseBoolean("true");
+
+* b.byteValue(): Método do Wrapper Byte que retorna o valor como byte primitivo.
+  - Sintaxe: System.out.println(b.byteValue());
+
+* import [pacote]: Torna uma classe externa acessível no arquivo atual em tempo de compilação.
+  - Sintaxe: import java.util.Scanner;
+
+* package [nome]: Declara o namespace do arquivo, organizando classes em módulos.
+  - Sintaxe: package fundamentos;
+
+--------------------------------------------------
+🧠 LÓGICA E CONCEITOS APRENDIDOS
+
+* final (constante): Palavra-chave que bloqueia reatribuição da variável após a inicialização; qualquer tentativa de alteração causa erro de compilação.
+  - Nota de atenção: Convenção é declarar em UPPER_SNAKE_CASE — ex: final double PI = 3.14159;
+
+* var (inferência de tipo): O compilador determina o tipo estático da variável pelo valor atribuído na declaração; o tipo é fixo após isso, não pode ser alterado como em Python.
+  - Nota de atenção: var sem inicialização é inválido — o compilador não tem base para inferir.
+
+* String como objeto imutável: Operações como toUpperCase() não alteram o valor interno do objeto; retornam um novo objeto String. A variável só muda se for reatribuída.
+  - Nota de atenção: s = s.toUpperCase() funciona; s.toUpperCase() isolado não persiste.
+
+* Tipos Primitivos vs Objetos: Primitivos (int, double, char...) não possuem métodos. Objetos possuem comportamentos acessíveis via operador ponto (.).
+  - Nota de atenção: int a = 3; seguido de a. é inválido — primitivos não têm membros.
+
+* Wrappers: Versões objeto dos tipos primitivos (Integer, Double, Boolean, Character, etc.) que encapsulam o valor primitivo e expõem métodos para conversão e manipulação.
+  - Nota de atenção: Long exige sufixo L (1000L) e Float exige sufixo F (123.10F) na literal — sem isso, o compilador rejeita a atribuição.

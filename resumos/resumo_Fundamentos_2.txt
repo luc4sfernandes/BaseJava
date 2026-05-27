@@ -1,0 +1,35 @@
+📌 RESUMO TÉCNICO: Conversões de Tipo, Operador Ternário e Comparação de Strings
+--------------------------------------------------
+⚙️ NOVAS FUNÇÕES E COMANDOS
+
+* Integer.toString(primitivo): Método estático que converte um int primitivo diretamente para String, sem precisar de um Wrapper instanciado.
+  - Sintaxe: Integer.toString(num2).length();
+
+* Double.parseDouble(str): Converte String numérica para double. Análogo ao Integer.parseInt() já visto.
+  - Sintaxe: double n = Double.parseDouble("3.14");
+
+* JOptionPane.showInputDialog(str): Abre uma janela gráfica do sistema operacional para capturar entrada do usuário; retorna sempre uma String.
+  - Sintaxe: String valor = JOptionPane.showInputDialog("Digite:");  |  requer: import javax.swing.JOptionPane;
+
+* s.trim(): Retorna nova String com todos os espaços em branco removidos do início e do fim.
+  - Sintaxe: s1.trim();
+
+--------------------------------------------------
+🧠 LÓGICA E CONCEITOS APRENDIDOS
+
+* Conversão Implícita (Widening): O compilador promove automaticamente um tipo menor para um maior (ex: int → double) sem instrução explícita, pois não há risco de perda de dados.
+  - Nota de atenção: A direção é sempre do menor para o maior — o inverso exige cast manual.
+
+* Cast Explícito (Narrowing): Sintaxe (tipo) força a conversão de um tipo maior para um menor; o compilador trunca o excedente sem arredondamento e sem erro em runtime.
+  - Nota de atenção: double 1.99999 vira int 1 — a parte decimal é descartada, não arredondada.
+
+* Operador Ternário: Expressão inline substituta do if/else que avalia uma condição e retorna um de dois valores; resultado deve ser atribuído a uma variável.
+  - Sintaxe: String r = media >= 7.0 ? "Aprovado" : "Reprovado";
+
+* == vs .equals() em Strings: == compara referência de memória (endereço do objeto), não conteúdo. Strings criadas via new String() ou lidas do Scanner ocupam endereços distintos do pool de literais, fazendo == retornar false mesmo com conteúdo idêntico.
+  - Nota de atenção: Sempre usar .equals() para comparar conteúdo de Strings — nunca ==.
+
+* .next() vs .nextLine(): .next() lê até o primeiro espaço em branco e descarta os delimitadores; .nextLine() lê a linha inteira incluindo espaços internos até o \n.
+  - Nota de atenção: Para comparar input do usuário com .equals(), combinar .next() + .trim() é mais seguro contra espaços acidentais.
+
+* Artifício "" + numero: Concatenar uma String vazia com um número força a conversão para String pelo compilador, mas é considerado gambiarra — preferir Integer.toString() ou String.valueOf().
