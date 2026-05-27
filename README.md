@@ -4,7 +4,6 @@
 
 ![Java](https://img.shields.io/badge/Java-17%2B-orange?style=flat-square&logo=openjdk)
 ![Status](https://img.shields.io/badge/Status-Em%20progresso-yellow?style=flat-square)
-![Fase atual](https://img.shields.io/badge/Fase%20atual-1%20%E2%80%94%20Funda%C3%A7%C3%A3o-purple?style=flat-square)
 
 ---
 
@@ -22,6 +21,8 @@ Base_Java/
 ├── exercicios/               # Exercícios avulsos organizados por fase
 ├── resumos/                  # Resumos didáticos e anotações de estudo
 ├── ia-refatoracao/           # Código refatorado com apoio de IA
+├── livros/                   # Códigos de aprendizado e exemplos baseados em livros
+├── beecrowd/                 # Resolução de problemas e desafios da plataforma Beecrowd
 │
 ├── PROGRESSO.md              # Acompanhamento da trilha (blocos concluídos)
 ├── .gitignore
