@@ -1,4 +1,4 @@
-package classe.Desafio;
+package classesmetodos.classe.desafio;
 import java.util.Scanner;
 
 public class DataTeste {
