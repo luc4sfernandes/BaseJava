@@ -2,8 +2,10 @@ package classesmetodos.classe; // Ja que a classe 'Produto' esta na mesma pasta,
 
 public class ProdutoTeste {
 	public static void main(String[] args){
-		Produto p1 = new Produto("Notebook", 4356.89, 0.25);
-		var p2 = new Produto("Caneta Preta", 12.56, 0.29); // --> Consegue tambem inferir um valor
+		Produto p1 = new Produto("Notebook", 4356.89);
+		var p2 = new Produto("Caneta Preta", 12.56); // --> Consegue tambem inferir um valor
+
+		Produto.desconto = 0.3;
 
 		System.out.println(p1.nome);
 		System.out.println(p2.nome);
