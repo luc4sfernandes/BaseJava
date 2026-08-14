@@ -4,13 +4,13 @@ public class Produto {
 	// Criar 3 atributos
 	String nome;
 	double preco;
-	double desconto; // Estara entre 0 e 1
+	static double desconto; // Estara entre 0 e 1
 
 	// Metodo contrutor
-	Produto(String nome, double preco, double desconto) {
+	Produto(String nome, double preco) {
 		this.nome = nome;
 		this.preco = preco;
-		this.desconto = desconto;
+		desconto = 0.25;
 	}
 
 	// Metodos
