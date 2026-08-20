@@ -2,9 +2,10 @@ package classesmetodos.classe.desafio;
 
 public class Data {
     // Atributos
-    int dia;
-    int mes;
+    public int dia;
+    public int mes;
     int ano;
+    public char[] dataFormatada;
 
     // Metodos contrutores
     Data(){
@@ -13,7 +14,7 @@ public class Data {
         this.ano = 1970;
     }
 
-    Data(int dia, int mes, int ano){
+    public Data(int dia, int mes, int ano){
         this.dia = dia;
         this.mes = mes;
         this.ano = ano;
