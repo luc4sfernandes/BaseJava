@@ -28,6 +28,6 @@ public class notas {
 
         System.out.printf("\nMedia: %.1f\n", totalNotas / qtd);
 
-        entrada.close();;
+        entrada.close();
     }
 }
