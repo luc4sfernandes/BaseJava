@@ -11,9 +11,19 @@ class Funcionario {
 		idade = idadeInit;
 	}
 
+	// Sobrecarga de parametros, quando a mais de 1 construtor na classe
+	Funcionario(String nomeInit) {
+			nome = nomeInit;
+	}
+
+	// Contrutor default em java
+	Funcionario(){
+		
+	}
+	
 	public static void main(String[] args) {
 
-		Funcionario funcionario = new Funcionario("João","Desenvolvedor", 30);
+		Funcionario funcionario = new Funcionario("João");
 
 		System.out.println("Nome: " + funcionario.nome);
 		System.out.println("Cargo: " + funcionario.cargo);
