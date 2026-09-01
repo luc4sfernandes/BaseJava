@@ -3,7 +3,7 @@ import empresa.dados.*; // '*' importa todos as classes do pacote
 
 public class FolhadePagamento {
 	public static void main(String[] args){
-		Funcionario funcionario = new Funcionario("Lucas", 2362.98);
-		System.out.println(funcionario.nome);
+		Funcionario funcionario = new Funcionario("Lucas", 2000);
+		System.out.println(funcionario.obterInfo());
 	}
 }
