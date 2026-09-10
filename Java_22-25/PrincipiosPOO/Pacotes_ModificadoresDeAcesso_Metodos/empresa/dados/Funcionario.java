@@ -14,5 +14,9 @@ public class Funcionario{
 	public String obterInfo(){
 		return "Nome: " + nome + ", Salario: " + salario;
 	}
+
+	public void alterarQualquerSalario(Funcionario func, double novoSalario){
+		func.salario = novoSalario;
+	}
 	
 }
