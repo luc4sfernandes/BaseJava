@@ -7,7 +7,7 @@ interface Interface2 {
 }
 
 // Multiplas interfaces
-class ClasseExemplo implements Interface1, Interface2 { 
+abstract class ClasseExemplo implements Interface1, Interface2 { 
     public void metodo1() {
         System.out.println("Método 1");
     }
@@ -17,10 +17,11 @@ class ClasseExemplo implements Interface1, Interface2 {
     }
 }
 
-public class TestInterfaceMultipla {
+public class TestInterfaceMultipla extends ClasseExemplo { 
     public static void main(String[] args) {
-        ClasseExemplo exemplo = new ClasseExemplo();
-        exemplo.metodo1();
-        exemplo.metodo2();
+		TestInterfaceMultipla test = new TestInterfaceMultipla();
+
+		test.metodo1();
+		test.metodo2();
     }
 }
