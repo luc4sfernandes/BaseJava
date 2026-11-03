@@ -1,5 +1,3 @@
-package Curso.ArraysCollections.EqualsHashcode;
-
 public class Usuario {
     String nome;
     String email;

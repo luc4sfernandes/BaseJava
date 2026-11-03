@@ -1,5 +1,3 @@
-package classesmetodos.classe;
-
 public class Produto {
 	// Criar 3 atributos
 	String nome;

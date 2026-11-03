@@ -1,5 +1,3 @@
-package classesmetodos.classe.desafio;
-
 public class Data {
     // Atributos
     public int dia;

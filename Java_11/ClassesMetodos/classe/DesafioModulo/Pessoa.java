@@ -1,5 +1,3 @@
-package Curso.classesmetodos.classe.DesafioModulo;
-
 public class Pessoa {
     String nome;
     double peso;

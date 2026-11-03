@@ -1,5 +1,3 @@
-package Curso.classesmetodos.classe.DesafioModulo;
-
 public class Comida {
     String comida;
     double pesoDaComida;

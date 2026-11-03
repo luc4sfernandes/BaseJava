@@ -1,4 +1,4 @@
-package classesmetodos.classe; // Ja que a classe 'Produto' esta na mesma pasta, não e preciso importar a classe produto
+// Ja que a classe 'Produto' esta na mesma pasta, não e preciso importar a classe produto
 
 public class ProdutoTeste {
 	public static void main(String[] args){
