@@ -1,5 +1,3 @@
-package Curso.classesmetodos.classe.DesafioModulo;
-
 public class Janta {
     public static void main(String[] args) {
         Comida c1 = new Comida("Arroz", 200);

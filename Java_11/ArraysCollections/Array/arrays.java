@@ -1,5 +1,3 @@
-package Curso.ArraysCollections.Array;
-
 import java.util.Arrays;
 
 public class arrays {

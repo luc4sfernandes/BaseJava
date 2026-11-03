@@ -1,4 +1,3 @@
-package Curso.ArraysCollections.Desafio.CalcularMediaAluno;
 import java.util.Scanner;
 
 public class notas {

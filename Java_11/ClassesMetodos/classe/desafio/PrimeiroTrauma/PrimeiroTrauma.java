@@ -1,5 +1,3 @@
-package classesmetodos.classe.desafio.PrimeiroTrauma;
-
 public class PrimeiroTrauma {
 
     int a = 3; // Não pode mexer aqui!!!

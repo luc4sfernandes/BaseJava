@@ -1,4 +1,3 @@
-package Curso.ArraysCollections.EqualsHashcode;
 import java.util.Date;
 
 public class Equals {
