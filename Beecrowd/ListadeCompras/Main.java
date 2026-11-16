@@ -1,3 +1,5 @@
+package Beecrowd.ListadeCompras;
+
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;

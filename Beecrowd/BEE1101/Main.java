@@ -10,7 +10,7 @@ public class Main {
 			int num = 0;
 
 			int i = entrada.nextInt();
-			int j = entrada.nextInt();
+			int j = entrada.nextInt();		
 
 			if(i <= 0 || j <= 0){ break; }
 

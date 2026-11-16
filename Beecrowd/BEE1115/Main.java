@@ -1,3 +1,5 @@
+package Beecrowd.BEE1115;
+
 import java.io.IOException;
 import java.util.Scanner;
  
