@@ -1,3 +1,5 @@
+package Java_11.EstruturaDeControle;
+
 import java.util.Scanner;
 
 public class If {

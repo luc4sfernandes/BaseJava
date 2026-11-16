@@ -1,3 +1,5 @@
+package Java_11.Exercicios;
+
 // Trabalho na terça (V ou F)
 // Trabalho na quinta (V ou F)
 // Se ambos for verdadeira, vai comprar uma televisão de 50`

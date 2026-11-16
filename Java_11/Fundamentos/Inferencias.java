@@ -1,3 +1,5 @@
+package Java_11.Fundamentos;
+
 public class Inferencias {
 	public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package Java_11.Fundamentos;
+
 public class Ternario {
 	public static void main(String[] args) {
 		double media = 7.6;

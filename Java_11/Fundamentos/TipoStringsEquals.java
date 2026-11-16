@@ -1,3 +1,5 @@
+package Java_11.Fundamentos;
+
 import java.util.Scanner;
 
 public class TipoStringsEquals {

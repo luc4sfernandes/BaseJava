@@ -1,3 +1,5 @@
+package Java_11.Exercicios;
+
 import java.util.Scanner;
 
 public class DesafioWhile {
