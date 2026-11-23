@@ -5,11 +5,11 @@ public class Main {
  
     public static void main(String[] args) throws IOException {
  		Scanner entrada = new Scanner(System.in);
- 		int resultado = 0, num = entrada.nextInt();
+ 		int resultado = 1, num = entrada.nextInt();
 
- 		for(int i = 1; i <= num; i++){
- 			resultado += (resultado * i);
- 		}
+		for (int i = 1; i <= num; i++) {
+		      resultado *= i;
+		 }
 
  		System.out.println(resultado);
     }
